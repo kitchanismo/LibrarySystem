@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9B89424-35B6-4A67-AED7-CBB6EC9D094A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LibSys.My.MyApplication</StartupObject>
+    <RootNamespace>LibSys</RootNamespace>
+    <AssemblyName>LibSys</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LibSys.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LibSys.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>law.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gLabel">
+      <HintPath>D:\vampiping.exe\stuffs\InvSys(STI)v5.0\InvSys(STI)\InventorySystem\bin\Release\gLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="kitchan, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chaelynxz\Desktop\CryptoObfuscator_Output\kitchan.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="frmAccountSet.Designer.vb">
+      <DependentUpon>frmAccountSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccountSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthorMaint.Designer.vb">
+      <DependentUpon>frmAuthorMaint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorMaint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBooks.Designer.vb">
+      <DependentUpon>frmBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrowBooks.Designer.vb">
+      <DependentUpon>frmBorrowBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrowBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangepword.Designer.vb">
+      <DependentUpon>frmChangepword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangepword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDateTimeSet.Designer.vb">
+      <DependentUpon>frmDateTimeSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDateTimeSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDueBooks.Designer.vb">
+      <DependentUpon>frmDueBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDueBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIssuance.Designer.vb">
+      <DependentUpon>frmIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIssuance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturnedBooks.Designer.vb">
+      <DependentUpon>frmReturnedBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReturnedBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCurrentUserLog.Designer.vb">
+      <DependentUpon>frmCurrentUserLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrentUserLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookMaint.Designer.vb">
+      <DependentUpon>frmBookMaint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookMaint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturnBooks.Designer.vb">
+      <DependentUpon>frmReturnBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReturnBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchBorrower.Designer.vb">
+      <DependentUpon>frmSearchBorrower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchBorrower.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserLogs.Designer.vb">
+      <DependentUpon>frmUserLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserMaint.Designer.vb">
+      <DependentUpon>frmUserMaint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserMaint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modCon.vb" />
+    <Compile Include="modFillData.vb" />
+    <Compile Include="modIfExist.vb" />
+    <Compile Include="modSearch.vb" />
+    <Compile Include="modGlobal.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="tet.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAccountSet.resx">
+      <DependentUpon>frmAccountSet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthorMaint.resx">
+      <DependentUpon>frmAuthorMaint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBooks.resx">
+      <DependentUpon>frmBooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrowBooks.resx">
+      <DependentUpon>frmBorrowBooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangepword.resx">
+      <DependentUpon>frmChangepword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDateTimeSet.resx">
+      <DependentUpon>frmDateTimeSet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDueBooks.resx">
+      <DependentUpon>frmDueBooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIssuance.resx">
+      <DependentUpon>frmIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReturnedBooks.resx">
+      <DependentUpon>frmReturnedBooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCurrentUserLog.resx">
+      <DependentUpon>frmCurrentUserLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookMaint.resx">
+      <DependentUpon>frmBookMaint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReturnBooks.resx">
+      <DependentUpon>frmReturnBooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchBorrower.resx">
+      <DependentUpon>frmSearchBorrower.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserLogs.resx">
+      <DependentUpon>frmUserLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserMaint.resx">
+      <DependentUpon>frmUserMaint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\kitchan.dll" />
+    <Content Include="law.ico" />
+    <Content Include="NewIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
